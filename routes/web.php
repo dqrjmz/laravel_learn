@@ -23,7 +23,9 @@
 //路由关联控制器
 //Route::get('member/info','MemberController@info');
 //Route::get('member/info',['uses'=>'MemberController@info']);
-Route::get('/',['uses'=>'MemberController@info']);
+//Route::get('/',['uses'=>'MemberController@info']);
+Route::get('/set',['uses'=>'MemberController@setCookie']);
+Route::get('/get',['uses'=>'MemberController@getCookie']);
 
 ////路由中返回视图
 //Route::get('/', function () {

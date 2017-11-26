@@ -52,4 +52,23 @@ class MemberController extends Controller
 
         return 'jmz';
     }
+
+    public function setCookie()
+    {
+//        setcookie('nmae','jmz',time()+1);
+        header('set-Cookie:name=jmz;age=2');
+        return 'cookie';
+    }
+
+    public function getCookie()
+    {
+//        if($_COOKIE['name']){
+//            return $_COOKIE['name'];
+//        }else{
+//            return 'wu';
+//        }
+        dd($_SESSION);
+        return $this->getCookie();
+
+    }
 }
